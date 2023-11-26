@@ -1,20 +1,24 @@
 import { Button, Container, Nav, Navbar } from "react-bootstrap";
 import { NavLink } from "react-router-dom";
 import { routes } from "../utilities/config";
+import { useTranslation } from "react-i18next";
+import langKey from "../bootstrap/i18n/langKey";
 
 const AppNavbar = () => {
+  const { t } = useTranslation();
+
   return (
     <Navbar className="bg-white shadow-sm mb-3">
       <Container>
         <Nav className="me-auto">
           <Nav.Link as={NavLink} to={routes.HOME}>
-            Home
+            {t(langKey.navbar.home)}
           </Nav.Link>
           <Nav.Link as={NavLink} to={routes.STORE}>
-            Store
+            {t(langKey.navbar.store)}
           </Nav.Link>
           <Nav.Link as={NavLink} to={routes.ABOUT}>
-            About
+            {t(langKey.navbar.about)}
           </Nav.Link>
         </Nav>
         <Button
