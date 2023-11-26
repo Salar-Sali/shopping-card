@@ -3,6 +3,7 @@ import { initReactI18next } from "react-i18next";
 import BrowserLanguageDetector from "i18next-browser-languagedetector";
 import en from "./langs/en/en";
 import ru from "./langs/ru/ru";
+import ar from "./langs/ar/ar";
 
 export enum LANGS {
   EN = "en",
@@ -27,6 +28,9 @@ class I18N {
       },
       [LANGS.RU]: {
         translation: ru,
+      },
+      [LANGS.AR]: {
+        translation: ar,
       },
     };
   }
