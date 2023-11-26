@@ -1,8 +1,8 @@
 import { Button, Container, Nav, Navbar } from "react-bootstrap";
 import { NavLink } from "react-router-dom";
-import { routes } from "../utilities/config";
+import { routes } from "../../utilities/config";
 import { useTranslation } from "react-i18next";
-import langKey from "../bootstrap/i18n/langKey";
+import langKey from "../../bootstrap/i18n/langKey";
 
 const AppNavbar = () => {
   const { t } = useTranslation();
