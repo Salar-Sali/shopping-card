@@ -3,11 +3,19 @@ import IStoreItemProps from "./i-store-item-props";
 import { formatCurrency } from "../../utilities/format-currency";
 import { useTranslation } from "react-i18next";
 import langKey from "../../bootstrap/i18n/langKey";
+import { useShoppingCartContext } from "../../context/shopping-cart-context/shopping-cart-context";
 
 const StoreItem = (props: IStoreItemProps) => {
   const { vm } = props;
   const { t } = useTranslation();
-  const quantity = 2;
+
+  const {
+    getCartQuantity,
+    increaseCartQuantity,
+    decreaseCartQuantity,
+    resetCartQuantity,
+  } = useShoppingCartContext();
+  const quantity = getCartQuantity(vm.id);
   return (
     <Card className="h-100">
       <Card.Img
@@ -23,7 +31,12 @@ const StoreItem = (props: IStoreItemProps) => {
         </Card.Title>
         <div className="mt-auto">
           {quantity === 0 ? (
-            <Button className="w-100">{t(langKey.store.addToBasket)}</Button>
+            <Button
+              className="w-100"
+              onClick={() => increaseCartQuantity(vm.id)}
+            >
+              {t(langKey.store.addToBasket)}
+            </Button>
           ) : (
             // contains (+,-,and quatity)(remove)
             <div
@@ -32,15 +45,19 @@ const StoreItem = (props: IStoreItemProps) => {
             >
               {/* (+,-,and quatity) */}
               <div className="d-flex justify-content-center align-items-center">
-                <Button>-</Button>
+                <Button onClick={() => decreaseCartQuantity(vm.id)}>-</Button>
                 <div className="mx-2">
                   <span className="fs-3">{quantity}</span>
                   {t(langKey.store.itemsInTheBasket)}
                 </div>
-                <Button>+</Button>
+                <Button onClick={() => increaseCartQuantity(vm.id)}>+</Button>
               </div>
               {/* remove button */}
-              <Button className="btn btn-danger" size="sm">
+              <Button
+                className="btn btn-danger"
+                size="sm"
+                onClick={() => resetCartQuantity(vm.id)}
+              >
                 {t(langKey.store.remove)}
               </Button>
             </div>
