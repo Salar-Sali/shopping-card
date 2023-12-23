@@ -11,6 +11,9 @@ const ar: typeof langKey = {
     about: "حول",
     store: "المخزن",
   },
+  store:{
+    addToBasket:"أضف إلى السلة"
+  }
 };
 
 export default ar;

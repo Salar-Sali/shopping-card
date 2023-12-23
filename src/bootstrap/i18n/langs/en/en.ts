@@ -11,6 +11,9 @@ const en: typeof langKey = {
     about: "About",
     store: "Store",
   },
+  store:{
+    addToBasket:"Add to basket"
+  }
 };
 
 export default en;

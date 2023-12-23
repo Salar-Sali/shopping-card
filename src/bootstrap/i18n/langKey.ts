@@ -14,6 +14,10 @@ const langKey = {
     about: "navbar.about",
     store: "navbar.store",
   },
+  store:{
+    addToBasket:"store.addToBasket"
+  }
+
 };
 
 export default langKey;

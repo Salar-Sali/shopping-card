@@ -1,11 +1,15 @@
-import { Card } from "react-bootstrap";
+import { Button, Card } from "react-bootstrap";
 import IStoreItemProps from "./i-store-item-props";
 import { formatCurrency } from "../../utilities/format-currency";
+import { useTranslation } from "react-i18next";
+import langKey from "../../bootstrap/i18n/langKey";
 
 const StoreItem = (props: IStoreItemProps) => {
   const { vm } = props;
+  const {t} = useTranslation()
+  const quantity = 0;
   return (
-    <Card>
+    <Card className="h-100">
       <Card.Img
         src={vm.imgUrl}
         variant="top"
@@ -17,7 +21,7 @@ const StoreItem = (props: IStoreItemProps) => {
           <span className="fs-2">{vm.name}</span>
           <span className="ms-2 text-muted">{formatCurrency(vm.price)}</span>
         </Card.Title>
-        <span>button</span>
+        <div className="mt-auto">{quantity===0? (<Button className="w-100">{t(langKey.store.addToBasket)}</Button>):(<div>options</div>)}</div>
       </Card.Body>
     </Card>
   );
