@@ -24,7 +24,7 @@ export const ShoppingCartContextProvider = (
   const increaseCartQuantity = (id: number) => {
     setCartItems((currItems) => {
       // in case it does not exist
-      if (currItems.find((item) => item.id === id) === null) {
+      if (currItems.find((item) => item.id === id) == null) {
         return [...currItems, { id, quantity: 1 }];
       } else {
         return currItems.map((item) => {
@@ -42,7 +42,7 @@ export const ShoppingCartContextProvider = (
     setCartItems((currItems) => {
       // in case it does not exist
       if (currItems.find((item) => item.id === id)?.quantity === 1) {
-        return currItems.filter((item) => item.id === id);
+        return currItems.filter((item) => item.id !== id);
       } else {
         return currItems.map((item) => {
           if (item.id === id) {
