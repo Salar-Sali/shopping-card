@@ -11,9 +11,11 @@ const ru: typeof langKey = {
     about: "О нас",
     store: "Магазин",
   },
-  store:{
-    addToBasket:"Добавить в корзину"
-  }
+  store: {
+    addToBasket: "Добавить в корзину",
+    itemsInTheBasket: "товары в корзине",
+    remove: "Удалить",
+  },
 };
 
 export default ru;

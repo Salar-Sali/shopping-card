@@ -11,9 +11,11 @@ const ar: typeof langKey = {
     about: "حول",
     store: "المخزن",
   },
-  store:{
-    addToBasket:"أضف إلى السلة"
-  }
+  store: {
+    addToBasket: "أضف إلى السلة",
+    itemsInTheBasket: "قطع في السلة",
+    remove: "إزالة",
+  },
 };
 
 export default ar;

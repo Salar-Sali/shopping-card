@@ -14,10 +14,11 @@ const langKey = {
     about: "navbar.about",
     store: "navbar.store",
   },
-  store:{
-    addToBasket:"store.addToBasket"
-  }
-
+  store: {
+    addToBasket: "store.addToBasket",
+    itemsInTheBasket: "store.itemsInTheBasket",
+    remove: "store.remove",
+  },
 };
 
 export default langKey;

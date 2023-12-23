@@ -6,8 +6,8 @@ import langKey from "../../bootstrap/i18n/langKey";
 
 const StoreItem = (props: IStoreItemProps) => {
   const { vm } = props;
-  const {t} = useTranslation()
-  const quantity = 0;
+  const { t } = useTranslation();
+  const quantity = 2;
   return (
     <Card className="h-100">
       <Card.Img
@@ -21,7 +21,31 @@ const StoreItem = (props: IStoreItemProps) => {
           <span className="fs-2">{vm.name}</span>
           <span className="ms-2 text-muted">{formatCurrency(vm.price)}</span>
         </Card.Title>
-        <div className="mt-auto">{quantity===0? (<Button className="w-100">{t(langKey.store.addToBasket)}</Button>):(<div>options</div>)}</div>
+        <div className="mt-auto">
+          {quantity === 0 ? (
+            <Button className="w-100">{t(langKey.store.addToBasket)}</Button>
+          ) : (
+            // contains (+,-,and quatity)(remove)
+            <div
+              className="d-flex flex-column align-items-center"
+              style={{ gap: "0.5rem" }}
+            >
+              {/* (+,-,and quatity) */}
+              <div className="d-flex justify-content-center align-items-center">
+                <Button>-</Button>
+                <div className="mx-2">
+                  <span className="fs-3">{quantity}</span>
+                  {t(langKey.store.itemsInTheBasket)}
+                </div>
+                <Button>+</Button>
+              </div>
+              {/* remove button */}
+              <Button className="btn btn-danger" size="sm">
+                {t(langKey.store.remove)}
+              </Button>
+            </div>
+          )}
+        </div>
       </Card.Body>
     </Card>
   );
