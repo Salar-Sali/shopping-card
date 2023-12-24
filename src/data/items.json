@@ -15,7 +15,7 @@
     "id": 3,
     "name": "Banana",
     "price": 1.05,
-    "imgUrl": "/imgs/banana.jpg"
+    "imgUrl": "./shopping-card/imgs/banana.jpg"
   },
   {
     "id": 4,
