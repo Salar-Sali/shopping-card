@@ -22,6 +22,7 @@ const StoreItem = (props: IStoreItemProps) => {
         src={vm.imgUrl}
         variant="top"
         height="200px"
+        alt={vm.name}
         style={{ objectFit: "cover" }}
       />
       <Card.Body className="d-flex flex-column">
