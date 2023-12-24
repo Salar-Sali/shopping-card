@@ -1,3 +1,4 @@
+
 [
   {
     "id": 1,
@@ -9,7 +10,7 @@
     "id": 2,
     "name": "Computer",
     "price": 1199,
-    "imgUrl": "./imgs/computer.jpg"
+    "imgUrl": "../../public/imgs/computer.jpg"
   },
   {
     "id": 3,
