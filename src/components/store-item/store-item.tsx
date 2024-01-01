@@ -4,7 +4,6 @@ import { formatCurrency } from "../../utilities/format-currency";
 import { useTranslation } from "react-i18next";
 import langKey from "../../bootstrap/i18n/langKey";
 import { useShoppingCartContext } from "../../context/shopping-cart-context/shopping-cart-context";
-import Ban from "../../../public/assets/banana.jpg"
 
 const StoreItem = (props: IStoreItemProps) => {
   const { vm } = props;
@@ -20,7 +19,7 @@ const StoreItem = (props: IStoreItemProps) => {
   return (
     <Card className="h-100">
       <Card.Img
-        src={Ban}
+        src={vm.imgUrl}
         variant="top"
         height="200px"
         alt={vm.name}
