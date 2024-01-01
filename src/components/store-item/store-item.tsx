@@ -18,14 +18,13 @@ const StoreItem = (props: IStoreItemProps) => {
   const quantity = getCartQuantity(vm.id);
   return (
     <Card className="h-100">
-      {/* <Card.Img
+      <Card.Img
         src={vm.imgUrl}
         variant="top"
         height="200px"
         alt={vm.name}
         style={{ objectFit: "cover" }}
-      /> */}
-      <img src={vm.imgUrl} />
+      />
       <Card.Body className="d-flex flex-column">
         <Card.Title className="d-flex justify-content-between align-items-baseline mb-3">
           <span className="fs-2">{vm.name}</span>
