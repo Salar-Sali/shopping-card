@@ -19,7 +19,7 @@ const StoreItem = (props: IStoreItemProps) => {
   return (
     <Card className="h-100">
       <Card.Img
-        src='/assets/car.jpg'
+        src={vm.imgUrl}
         variant="top"
         height="200px"
         alt={vm.name}
