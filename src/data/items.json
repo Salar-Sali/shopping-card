@@ -15,12 +15,12 @@
     "id": 3,
     "name": "Banana",
     "price": 1.05,
-    "imgUrl": "./assets/banana.jpg"
+    "imgUrl": "../../public/assets/banana.jpg"
   },
   {
     "id": 4,
     "name": "Car",
     "price": 14000,
-    "imgUrl": "./assets/car.jpg"
+    "imgUrl": "../../public/assets/car.jpg"
   }
 ]
