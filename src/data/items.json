@@ -9,7 +9,7 @@
     "id": 2,
     "name": "Computer",
     "price": 1199,
-    "imgUrl": "./assets/computer.jpg" 
+    "imgUrl": "./public/assets/computer.jpg" 
   },
   {
     "id": 3,
