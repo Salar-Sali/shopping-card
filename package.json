@@ -1,5 +1,5 @@
 {
-  "homepage":"http://Salar-Sali.github.io/shopping-card/",
+  "homepage": "http://Salar-Sali.github.io/shopping-card/",
   "name": "shopping-card",
   "private": true,
   "version": "0.0.0",
@@ -10,7 +10,8 @@
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview",
     "format": "prettier --write .",
-    "predeploy":"npm run build",
+    "analyze": "source-map-explorer 'build/static/js/*.js'",
+    "predeploy": "npm run build",
     "deploy": "gh-pages -d dist"
   },
   "dependencies": {
@@ -21,7 +22,8 @@
     "react-bootstrap": "^2.9.1",
     "react-dom": "^18.2.0",
     "react-i18next": "^13.5.0",
-    "react-router-dom": "^6.20.0"
+    "react-router-dom": "^6.20.0",
+    "source-map-explorer": "^2.5.3"
   },
   "devDependencies": {
     "@types/react": "^18.2.15",
