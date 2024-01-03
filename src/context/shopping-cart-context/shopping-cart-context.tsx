@@ -4,6 +4,7 @@ import {
   IShoppingCartContextProviderProps,
   ShoppingCartContextType,
 } from "./i-shopping-cart-context-props";
+import RightSidebar from "../../components/right-sidebar/right-sidebar";
 
 const ShoppingCartContext = createContext({} as ShoppingCartContextType);
 
@@ -15,13 +16,22 @@ export const ShoppingCartContextProvider = (
   props: IShoppingCartContextProviderProps
 ) => {
   const { children } = props;
-  const [cartItems, setCartItems] = useState<CartItemData[]>([]);
 
+  // states
+  const [cartItems, setCartItems] = useState<CartItemData[]>([]);
+  const [isRightSidebarOpen, setIsRightSidebarOpen] = useState(false);
+
+  const openCart = () => setIsRightSidebarOpen(true);
+
+  const closeCart = () => setIsRightSidebarOpen(false);
+
+  // the quantity of all items that exist inside the cart
   const cartQuantity = cartItems.reduce(
-    (quantity, item) => item.quantity + quantity,
+    (currentQuantity, currentItem) => currentItem.quantity + currentQuantity,
     0
   );
 
+  // get the quantity of one item
   const getCartQuantity = (id: number) => {
     return cartItems.find((item) => item.id === id)?.quantity || 0;
   };
@@ -77,13 +87,15 @@ export const ShoppingCartContextProvider = (
         increaseCartQuantity,
         decreaseCartQuantity,
         resetCartQuantity,
-        // openCart,
-        // closeCart,
+        openCart,
+        closeCart,
         cartQuantity,
-        // cartItems,
+        cartItems,
+        isRightSidebarOpen,
       }}
     >
       {children}
+      <RightSidebar />
     </ShoppingCartContext.Provider>
   );
 };
