@@ -3,10 +3,11 @@ import { NavLink } from "react-router-dom";
 import { routes } from "../../utilities/config";
 import { useTranslation } from "react-i18next";
 import langKey from "../../bootstrap/i18n/langKey";
+import { useShoppingCartContext } from "../../context/shopping-cart-context/shopping-cart-context";
 
 const AppNavbar = () => {
   const { t } = useTranslation();
-
+  const { cartQuantity } = useShoppingCartContext();
   return (
     <Navbar sticky="top" className="bg-white shadow-sm mb-3">
       <Container>
@@ -55,7 +56,7 @@ const AppNavbar = () => {
               color: "white",
             }}
           >
-            2
+            {cartQuantity}
           </div>
         </Button>
       </Container>
