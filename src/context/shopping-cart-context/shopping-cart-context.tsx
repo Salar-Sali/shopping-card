@@ -5,6 +5,7 @@ import {
   ShoppingCartContextType,
 } from "./i-shopping-cart-context-props";
 import RightSidebar from "../../components/right-sidebar/right-sidebar";
+import { useLocaleStorage } from "../../hooks/use-locale-storage";
 
 const ShoppingCartContext = createContext({} as ShoppingCartContextType);
 
@@ -18,7 +19,11 @@ export const ShoppingCartContextProvider = (
   const { children } = props;
 
   // states
-  const [cartItems, setCartItems] = useState<CartItemData[]>([]);
+  const [cartItems, setCartItems] = useLocaleStorage<CartItemData[]>(
+    "shopping-cart-items",
+    []
+  );
+
   const [isRightSidebarOpen, setIsRightSidebarOpen] = useState(false);
 
   const openCart = () => setIsRightSidebarOpen(true);
@@ -80,6 +85,7 @@ export const ShoppingCartContextProvider = (
       });
     });
   };
+
   return (
     <ShoppingCartContext.Provider
       value={{
