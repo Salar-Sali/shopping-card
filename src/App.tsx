@@ -12,9 +12,9 @@ function App() {
       <AppNavbar />
       <Container className="mb-4">
         <Routes>
-          <Route path="/" element={<HomePage />} />
-          <Route path="/store" element={<StorePage />} />
-          <Route path="/about" element={<AboutPage />} />
+          <Route path="/shopping-card/" element={<HomePage />} />
+          <Route path="/shopping-card/store" element={<StorePage />} />
+          <Route path="/shopping-card/about" element={<AboutPage />} />
         </Routes>
       </Container>
     </ShoppingCartContextProvider>

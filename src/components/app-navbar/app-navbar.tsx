@@ -13,13 +13,13 @@ const AppNavbar = () => {
     <Navbar sticky="top" className="bg-white shadow-sm mb-3">
       <Container>
         <Nav className="me-auto">
-          <Nav.Link as={NavLink} to={routes.HOME}>
+          <Nav.Link as={NavLink} end to={routes.HOME}>
             {t(langKey.navbar.home)}
           </Nav.Link>
-          <Nav.Link as={NavLink} to={routes.STORE}>
+          <Nav.Link as={NavLink} end to={routes.STORE}>
             {t(langKey.navbar.store)}
           </Nav.Link>
-          <Nav.Link as={NavLink} to={routes.ABOUT}>
+          <Nav.Link as={NavLink} end to={routes.ABOUT}>
             {t(langKey.navbar.about)}
           </Nav.Link>
         </Nav>
