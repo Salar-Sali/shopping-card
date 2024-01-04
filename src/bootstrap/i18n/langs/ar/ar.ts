@@ -16,6 +16,10 @@ const ar: typeof langKey = {
     itemsInTheBasket: "قطع في السلة",
     remove: "إزالة",
   },
+  rightSidebar: {
+    cart: "السلة",
+    total: "المجموع",
+  },
 };
 
 export default ar;
