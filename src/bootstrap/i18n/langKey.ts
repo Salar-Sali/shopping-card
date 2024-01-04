@@ -19,6 +19,10 @@ const langKey = {
     itemsInTheBasket: "store.itemsInTheBasket",
     remove: "store.remove",
   },
+  rightSidebar: {
+    cart: "rightSidebar.cart",
+    total: "rightSidebar.total",
+  },
 };
 
 export default langKey;

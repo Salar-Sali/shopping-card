@@ -16,6 +16,10 @@ const ru: typeof langKey = {
     itemsInTheBasket: "товары в корзине",
     remove: "Удалить",
   },
+  rightSidebar: {
+    cart: "Корзина",
+    total: "Весь: ",
+  },
 };
 
 export default ru;
