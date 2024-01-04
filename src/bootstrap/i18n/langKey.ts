@@ -22,6 +22,7 @@ const langKey = {
   rightSidebar: {
     cart: "rightSidebar.cart",
     total: "rightSidebar.total",
+    cartIsEmpty: "rightSidebar.cartIsEmpty",
   },
 };
 

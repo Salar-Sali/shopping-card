@@ -19,6 +19,7 @@ const ru: typeof langKey = {
   rightSidebar: {
     cart: "Корзина",
     total: "Весь: ",
+    cartIsEmpty: "Корзина пуста..",
   },
 };
 

@@ -19,6 +19,7 @@ const ar: typeof langKey = {
   rightSidebar: {
     cart: "السلة",
     total: "المجموع",
+    cartIsEmpty: "السلة فارغة..",
   },
 };
 

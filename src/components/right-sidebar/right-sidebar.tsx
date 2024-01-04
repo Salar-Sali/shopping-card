@@ -8,7 +8,8 @@ import { formatCurrency } from "../../utilities/format-currency";
 
 const RightSidebar = () => {
   const { t } = useTranslation();
-  const { isRightSidebarOpen, closeCart, cartItems } = useShoppingCartContext();
+  const { isRightSidebarOpen, closeCart, cartItems, cartQuantity } =
+    useShoppingCartContext();
 
   const totalPrice = cartItems.reduce((total, cartItem) => {
     const currentStoreItem =
@@ -23,19 +24,29 @@ const RightSidebar = () => {
         <Offcanvas.Title>{t(langKey.rightSidebar.cart)}</Offcanvas.Title>
       </Offcanvas.Header>
       <Offcanvas.Body>
-        {/* items info */}
-        <Stack direction="vertical" gap={3}>
-          {cartItems.map((cartItem) => {
-            if (cartItem.quantity < 1) return;
-            return (
-              <RightSidebarCard id={cartItem.id} quantity={cartItem.quantity} />
-            );
-          })}
-          {/* total price */}
-          <div className="ms-auto fw-bold fs-5">
-            {t(langKey.rightSidebar.total)} {formatCurrency(totalPrice)}
+        {cartQuantity === 0 ? (
+          <div className="d-flex justify-content-center">
+            {t(langKey.rightSidebar.cartIsEmpty)}
           </div>
-        </Stack>
+        ) : (
+          // items info and total amount
+          <Stack direction="vertical" gap={3}>
+            {/* items info */}
+            {cartItems.map((cartItem) => {
+              if (cartItem.quantity < 1) return;
+              return (
+                <RightSidebarCard
+                  id={cartItem.id}
+                  quantity={cartItem.quantity}
+                />
+              );
+            })}
+            {/* total price */}
+            <div className="ms-auto fw-bold fs-5">
+              {t(langKey.rightSidebar.total)} {formatCurrency(totalPrice)}
+            </div>
+          </Stack>
+        )}
       </Offcanvas.Body>
     </Offcanvas>
   );

@@ -19,6 +19,7 @@ const en: typeof langKey = {
   rightSidebar: {
     cart: "Сart",
     total: "Total: ",
+    cartIsEmpty: "The cart is empty..",
   },
 };
 
