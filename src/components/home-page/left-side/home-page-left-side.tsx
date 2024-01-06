@@ -5,6 +5,7 @@ import { routes } from "../../../utilities/config";
 import { NavLink } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import langKey from "../../../bootstrap/i18n/langKey";
+import HomePageDescription from "../description/home-page-description";
 
 const HomePageLeftSide = () => {
   const { t } = useTranslation();
@@ -25,11 +26,8 @@ const HomePageLeftSide = () => {
         {t(langKey.homePage.with)}
         <span className="text-danger fw-bold">YoPal store</span>
       </h4>
-      <div>
-        <p>Affordable trends for a stylish look.</p>
-        <p>Innovative gadgets for a trendsetting lifestyle.</p>
-        <p>Quality, unique essentials to elevate daily life.</p>
-      </div>
+
+      <HomePageDescription />
 
       <Nav.Link as={NavLink} end to={routes.STORE}>
         <Button
