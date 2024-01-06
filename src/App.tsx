@@ -9,14 +9,18 @@ import { ShoppingCartContextProvider } from "./context/shopping-cart-context/sho
 function App() {
   return (
     <ShoppingCartContextProvider>
-      <AppNavbar />
-      <Container className="mb-4">
-        <Routes>
-          <Route path="/shopping-card/" element={<HomePage />} />
-          <Route path="/shopping-card/store" element={<StorePage />} />
-          <Route path="/shopping-card/about" element={<AboutPage />} />
-        </Routes>
-      </Container>
+      <div
+        style={{ display: "flex", flexDirection: "column", height: "100vh" }}
+      >
+        <AppNavbar />
+        <Container className="mb-4" style={{ flex: 1 }}>
+          <Routes>
+            <Route path="/shopping-card/" element={<HomePage />} />
+            <Route path="/shopping-card/store" element={<StorePage />} />
+            <Route path="/shopping-card/about" element={<AboutPage />} />
+          </Routes>
+        </Container>
+      </div>
     </ShoppingCartContextProvider>
   );
 }

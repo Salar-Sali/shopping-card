@@ -24,6 +24,11 @@ const langKey = {
     total: "rightSidebar.total",
     cartIsEmpty: "rightSidebar.cartIsEmpty",
   },
+  homePage: {
+    slogan: "homePage.slogan",
+    with: "homePage.with",
+    shopNow: "homePage.shopNow",
+  },
 };
 
 export default langKey;

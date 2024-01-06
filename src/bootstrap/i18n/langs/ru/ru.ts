@@ -21,6 +21,11 @@ const ru: typeof langKey = {
     total: "Весь: ",
     cartIsEmpty: "Корзина пуста..",
   },
+  homePage: {
+    slogan: "Откройте для себя радость онлайн-шопинга",
+    with: "с",
+    shopNow: "Купить сейчас",
+  },
 };
 
 export default ru;

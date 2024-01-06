@@ -16,6 +16,11 @@ const ar: typeof langKey = {
     itemsInTheBasket: "قطع في السلة",
     remove: "إزالة",
   },
+  homePage: {
+    slogan: "أكتشف متعة التسوق الإلكتروني",
+    with: "مع",
+    shopNow: "تسوق الآن",
+  },
   rightSidebar: {
     cart: "السلة",
     total: "المجموع",

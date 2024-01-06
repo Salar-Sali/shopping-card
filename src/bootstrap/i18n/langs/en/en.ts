@@ -21,6 +21,11 @@ const en: typeof langKey = {
     total: "Total: ",
     cartIsEmpty: "The cart is empty..",
   },
+  homePage: {
+    slogan: "Discover the Joy of Online Shopping",
+    with: "with",
+    shopNow: "SHOP NOW",
+  },
 };
 
 export default en;
