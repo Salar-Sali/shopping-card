@@ -16,7 +16,7 @@ const HomePage = () => {
       }}
     >
       {/* right and left wrapper */}
-      <Row md={2} xs={1} className="g-3 w-100 h-75">
+      <Row md={2} xs={1} className="g-2 w-100 h-100">
         <HomePageLeftSide />
         <HomePageRightSide />
       </Row>

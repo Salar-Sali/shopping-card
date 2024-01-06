@@ -1,6 +1,13 @@
 const HomePageSocialMediaIcons = () => {
   return (
-    <div style={{ display: "flex", gap: "15px", marginTop: "10px" }}>
+    <div
+      style={{
+        display: "flex",
+        gap: "15px",
+        marginTop: "10px",
+        justifyContent: "center",
+      }}
+    >
       {/* linkedIn */}
       <a
         href="https://www.linkedin.com/in/salarsali197"
@@ -8,8 +15,8 @@ const HomePageSocialMediaIcons = () => {
         rel="noreferrer"
       >
         <svg
-          width="2.25rem"
-          height="2.25rem"
+          width="2rem"
+          height="2rem"
           fill="currentColor"
           className="bi bi-linkedin text-primary rounded-circle"
           viewBox="0 0 16 16"
@@ -20,8 +27,8 @@ const HomePageSocialMediaIcons = () => {
       {/* github */}
       <a href="https://github.com/Salar-Sali" target="_blank" rel="noreferrer">
         <svg
-          width="2.25rem"
-          height="2.25rem"
+          width="2rem"
+          height="2rem"
           fill="currentColor"
           className="bi bi-github text-primary"
           viewBox="0 0 16 16"
@@ -32,8 +39,8 @@ const HomePageSocialMediaIcons = () => {
       {/* website */}
       <a href="https://salar-sali.github.io/" target="_blank" rel="noreferrer">
         <svg
-          width="2.25rem"
-          height="2.25rem"
+          width="2rem"
+          height="2rem"
           fill="currentColor"
           className="bi bi-globe text-primary"
           viewBox="0 0 16 16"
