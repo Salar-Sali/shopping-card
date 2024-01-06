@@ -13,6 +13,7 @@ const HomePage = () => {
         height: "100%",
         justifyContent: "center",
         alignItems: "center",
+        fontFamily: "Merriweather",
       }}
     >
       {/* right and left wrapper */}

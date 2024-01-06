@@ -5,6 +5,7 @@ const HomePageSocialMediaIcons = () => {
         display: "flex",
         gap: "15px",
         marginTop: "10px",
+        marginBottom: "10px",
         justifyContent: "center",
       }}
     >
