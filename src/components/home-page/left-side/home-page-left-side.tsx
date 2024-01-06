@@ -25,6 +25,11 @@ const HomePageLeftSide = () => {
         {t(langKey.homePage.with)}
         <span className="text-danger fw-bold">YoPal store</span>
       </h4>
+      <div>
+        <p>Affordable trends for a stylish look.</p>
+        <p>Innovative gadgets for a trendsetting lifestyle.</p>
+        <p>Quality, unique essentials to elevate daily life.</p>
+      </div>
 
       <Nav.Link as={NavLink} end to={routes.STORE}>
         <Button
