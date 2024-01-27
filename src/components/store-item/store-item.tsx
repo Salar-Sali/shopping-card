@@ -6,6 +6,20 @@ import langKey from "../../bootstrap/i18n/langKey";
 import { useShoppingCartContext } from "../../context/shopping-cart-context/shopping-cart-context";
 import { LANGS } from "../../bootstrap/i18n/init-i18n";
 
+enum storeContents {
+  Book = "Book",
+  Computer = "Computer",
+  Banana = "Banana",
+  Car = "Car",
+}
+
+const getTranslatedStoreContent = {
+  [storeContents.Book]: langKey.store.book,
+  [storeContents.Computer]: langKey.store.computer,
+  [storeContents.Banana]: langKey.store.banana,
+  [storeContents.Car]: langKey.store.car,
+};
+
 const StoreItem = (props: IStoreItemProps) => {
   const { vm } = props;
   const { t, i18n } = useTranslation();
@@ -32,7 +46,9 @@ const StoreItem = (props: IStoreItemProps) => {
           className="d-flex justify-content-between align-items-baseline mb-3"
           dir={isArabic ? "rtl" : ""}
         >
-          <span className="fs-2">{vm.name}</span>
+          <span className="fs-2">
+            {t(getTranslatedStoreContent[vm.name as storeContents])}
+          </span>
           <span className="ms-2 text-muted">{formatCurrency(vm.price)}</span>
         </Card.Title>
         <div className="mt-auto">
