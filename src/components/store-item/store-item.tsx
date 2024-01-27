@@ -4,10 +4,12 @@ import { formatCurrency } from "../../utilities/format-currency";
 import { useTranslation } from "react-i18next";
 import langKey from "../../bootstrap/i18n/langKey";
 import { useShoppingCartContext } from "../../context/shopping-cart-context/shopping-cart-context";
+import { LANGS } from "../../bootstrap/i18n/init-i18n";
 
 const StoreItem = (props: IStoreItemProps) => {
   const { vm } = props;
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
+  const isArabic = i18n.language === LANGS.AR;
 
   const {
     getCartQuantity,
@@ -26,7 +28,10 @@ const StoreItem = (props: IStoreItemProps) => {
         style={{ objectFit: "cover" }}
       />
       <Card.Body className="d-flex flex-column">
-        <Card.Title className="d-flex justify-content-between align-items-baseline mb-3">
+        <Card.Title
+          className="d-flex justify-content-between align-items-baseline mb-3"
+          dir={isArabic ? "rtl" : ""}
+        >
           <span className="fs-2">{vm.name}</span>
           <span className="ms-2 text-muted">{formatCurrency(vm.price)}</span>
         </Card.Title>

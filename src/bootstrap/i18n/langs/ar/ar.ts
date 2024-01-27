@@ -15,6 +15,10 @@ const ar: typeof langKey = {
     addToBasket: "أضف إلى السلة",
     itemsInTheBasket: "قطع في السلة",
     remove: "إزالة",
+    banana: "موز",
+    car: "سيارة",
+    computer: "حاسوب",
+    book: "كتاب",
   },
   homePage: {
     slogan: "أكتشف متعة التسوق الإلكتروني",

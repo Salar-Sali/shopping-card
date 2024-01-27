@@ -18,6 +18,10 @@ const langKey = {
     addToBasket: "store.addToBasket",
     itemsInTheBasket: "store.itemsInTheBasket",
     remove: "store.remove",
+    banana: "store.banana",
+    car: "store.car",
+    computer: "store.computer",
+    book: "store.book",
   },
   rightSidebar: {
     cart: "rightSidebar.cart",

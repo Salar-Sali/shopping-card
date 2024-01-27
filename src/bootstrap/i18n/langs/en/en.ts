@@ -15,6 +15,10 @@ const en: typeof langKey = {
     addToBasket: "Add to basket",
     itemsInTheBasket: "items in the basket",
     remove: "Remove",
+    banana: "store.banana",
+    car: "store.car",
+    computer: "store.computer",
+    book: "store.book",
   },
   rightSidebar: {
     cart: "Сart",

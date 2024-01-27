@@ -15,6 +15,10 @@ const ru: typeof langKey = {
     addToBasket: "Добавить в корзину",
     itemsInTheBasket: "товары в корзине",
     remove: "Удалить",
+    banana: "Банан",
+    car: "Машина",
+    computer: "Книга",
+    book: "Компьютер",
   },
   rightSidebar: {
     cart: "Корзина",
@@ -30,7 +34,7 @@ const ru: typeof langKey = {
       "Инновационные гаджеты для создания модного образа жизни.",
     descriptionThirdItem:
       "Качественные неотъемлемые аксессуары для повседневной жизни.",
-    yopalStore: "Магазин YoPal",
+    yopalStore: " Магазин YoPal ",
   },
 };
 
