@@ -59,5 +59,54 @@
     "name": "Tulip",
     "price": 7.25,
     "imgUrl": "assets/tulip.jpg"
+  },
+  {
+    "id": 11,
+    "name": "Cap",
+    "price": 3.00,
+    "imgUrl": "assets/cap.jpeg"
+  },
+  {
+    "id": 12,
+    "name": "Coffee",
+    "price": 14,
+    "imgUrl": "assets/coffee.jpeg"
+  },
+  {
+    "id": 13,
+    "name": "Dates",
+    "price": 6,
+    "imgUrl": "assets/dates.jpeg"
+  },
+  {
+    "id": 14,
+    "name": "Glasses",
+    "price": 4,
+    "imgUrl": "assets/glasses.jpeg"
+  }
+  ,
+  {
+    "id": 15,
+    "name": "Kiwi",
+    "price": 2.15,
+    "imgUrl": "assets/kiwi.jpeg"
+  },
+  {
+    "id": 16,
+    "name": "Plate",
+    "price": 9,
+    "imgUrl": "assets/plate.jpeg"
+  },
+  {
+    "id": 17,
+    "name": "Pomegranate",
+    "price": 2,
+    "imgUrl": "assets/pomegranate.jpeg"
+  },
+  {
+    "id": 18,
+    "name": "Rice",
+    "price": 1.5,
+    "imgUrl": "assets/rice.jpg"
   }
 ]

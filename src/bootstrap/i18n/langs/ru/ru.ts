@@ -25,6 +25,15 @@ const ru: typeof langKey = {
     teapot: "Чайник",
     tulip: "Тюльпан",
     watch: "Умные часы",
+
+    cap: "Шапка",
+    coffee: "Кофе",
+    dates: "финики",
+    glasses: "Очки",
+    kiwi: "Киви",
+    plate: "Тарелка",
+    pomegranate: "Гранат",
+    rice: "Рис",
   },
   rightSidebar: {
     cart: "Корзина",

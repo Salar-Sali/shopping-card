@@ -11,13 +11,21 @@ enum storeContents {
   Computer = "Computer",
   Banana = "Banana",
   Car = "Car",
-
   Iphone = "Iphone",
   Mata = "Mata",
   Mouse = "Mouse",
   Watch = "Watch",
   Teapot = "Teapot",
   Tulip = "Tulip",
+
+  Cap = "Cap",
+  Coffee = "Coffee",
+  Dates = "Dates",
+  Glasses = "Glasses",
+  Kiwi = "Kiwi",
+  Plate = "Plate",
+  Pomegranate = "Pomegranate",
+  Rice = "Rice",
 }
 
 const getTranslatedStoreContent = {
@@ -25,13 +33,20 @@ const getTranslatedStoreContent = {
   [storeContents.Computer]: langKey.store.computer,
   [storeContents.Banana]: langKey.store.banana,
   [storeContents.Car]: langKey.store.car,
-
   [storeContents.Iphone]: langKey.store.iphone,
   [storeContents.Mata]: langKey.store.mata,
   [storeContents.Mouse]: langKey.store.mouse,
   [storeContents.Teapot]: langKey.store.teapot,
   [storeContents.Tulip]: langKey.store.tulip,
   [storeContents.Watch]: langKey.store.watch,
+  [storeContents.Cap]: langKey.store.cap,
+  [storeContents.Coffee]: langKey.store.coffee,
+  [storeContents.Dates]: langKey.store.dates,
+  [storeContents.Glasses]: langKey.store.glasses,
+  [storeContents.Kiwi]: langKey.store.kiwi,
+  [storeContents.Plate]: langKey.store.plate,
+  [storeContents.Pomegranate]: langKey.store.pomegranate,
+  [storeContents.Rice]: langKey.store.rice,
 };
 
 const StoreItem = (props: IStoreItemProps) => {
