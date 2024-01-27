@@ -31,6 +31,7 @@ const langKey = {
     descriptionFirstItem: "homePage.descriptionFirstItem",
     descriptionSecondItem: "homePage.descriptionSecondItem",
     descriptionThirdItem: "homePage.descriptionThirdItem",
+    yopalStore: "homePage.yopalStore",
   },
 };
 

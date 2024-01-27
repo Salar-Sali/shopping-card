@@ -24,6 +24,7 @@ const ar: typeof langKey = {
     descriptionSecondItem: "أجهزة مبتكرة لنمط حياة يحدث تغيراً.",
     descriptionThirdItem:
       "ضروريات عالية الجودة وفريدة لرفع مستوى الحياة اليومية.",
+    yopalStore: " متجر يوبال ",
   },
   rightSidebar: {
     cart: "السلة",

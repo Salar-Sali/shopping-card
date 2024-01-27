@@ -27,7 +27,9 @@ const HomePageLeftSide = () => {
       </h2>
       <h4 style={{ textAlign: "center", fontSize: "26px" }}>
         {t(langKey.homePage.with)}
-        <span className="text-danger fw-bold">YoPal store</span>
+        <span className="text-danger fw-bold">
+          {t(langKey.homePage.yopalStore)}
+        </span>
       </h4>
 
       <HomePageDescription />
