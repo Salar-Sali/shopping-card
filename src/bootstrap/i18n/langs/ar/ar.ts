@@ -19,6 +19,12 @@ const ar: typeof langKey = {
     car: "سيارة",
     computer: "حاسوب",
     book: "كتاب",
+    iphone: "ايفون 11",
+    mata: "متة",
+    mouse: "فأرة حاسوب",
+    teapot: "إبريق",
+    tulip: "وردة التوليب",
+    watch: "ساعة ذكية",
   },
   homePage: {
     slogan: "أكتشف متعة التسوق الإلكتروني",

@@ -19,6 +19,12 @@ const en: typeof langKey = {
     car: "Car",
     computer: "Computer",
     book: "Book",
+    iphone: "Iphone 11",
+    mata: "Mata",
+    mouse: "Mouse",
+    teapot: "Teapot",
+    tulip: "Tulip",
+    watch: "Watch",
   },
   rightSidebar: {
     cart: "Сart",

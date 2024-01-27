@@ -22,6 +22,12 @@ const langKey = {
     car: "store.car",
     computer: "store.computer",
     book: "store.book",
+    iphone: "store.iphone",
+    mata: "store.mata",
+    mouse: "store.mouse",
+    teapot: "store.teapot",
+    tulip: "store.tulip",
+    watch: "store.watch",
   },
   rightSidebar: {
     cart: "rightSidebar.cart",

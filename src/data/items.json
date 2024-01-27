@@ -22,5 +22,42 @@
     "name": "Car",
     "price": 14000,
     "imgUrl": "assets/car.jpg"
+  },
+  {
+    "id": 5,
+    "name": "Iphone",
+    "price": 950,
+    "imgUrl": "assets/iphone.jpg"
+  },
+  {
+    "id": 6,
+    "name": "Mata",
+    "price": 4,
+    "imgUrl": "assets/mata.jpg"
+  }
+  ,
+  {
+    "id": 7,
+    "name": "Mouse",
+    "price": 6,
+    "imgUrl": "assets/mouse.jpg"
+  },
+  {
+    "id": 8,
+    "name": "Watch",
+    "price": 25,
+    "imgUrl": "assets/watch.jpeg"
+  },
+  {
+    "id": 9,
+    "name": "Teapot",
+    "price": 9.75,
+    "imgUrl": "assets/teapot.jpg"
+  },
+  {
+    "id": 10,
+    "name": "Tulip",
+    "price": 7.25,
+    "imgUrl": "assets/tulip.jpg"
   }
 ]

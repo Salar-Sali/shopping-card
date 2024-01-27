@@ -19,6 +19,12 @@ const ru: typeof langKey = {
     car: "Машина",
     computer: "Книга",
     book: "Компьютер",
+    iphone: "Aйфон",
+    mata: "Мата",
+    mouse: "Мышь",
+    teapot: "Чайник",
+    tulip: "Тюльпан",
+    watch: "Умные часы",
   },
   rightSidebar: {
     cart: "Корзина",
