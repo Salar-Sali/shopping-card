@@ -28,7 +28,7 @@ const en: typeof langKey = {
     descriptionFirstItem: "Affordable trends for a stylish look.",
     descriptionSecondItem: "Innovative gadgets for a trendsetting lifestyle.",
     descriptionThirdItem: "Quality, unique essentials to elevate daily life.",
-    yopalStore: "homePage.yopalStore",
+    yopalStore: "YoPal Store",
   },
 };
 
