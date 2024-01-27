@@ -68,8 +68,12 @@ const StoreItem = (props: IStoreItemProps) => {
               {/* (+,-,and quatity) */}
               <div className="d-flex justify-content-center align-items-center">
                 <Button onClick={() => decreaseCartQuantity(vm.id)}>-</Button>
-                <div className="mx-2">
-                  <span className="fs-3">{quantity}</span>
+                <div
+                  className={`mx-2 d-flex align-items-center ${
+                    isArabic ? "flex-row-reverse" : ""
+                  }`}
+                >
+                  <span className="fs-4">{quantity}</span>
                   {t(langKey.store.itemsInTheBasket)}
                 </div>
                 <Button onClick={() => increaseCartQuantity(vm.id)}>+</Button>
