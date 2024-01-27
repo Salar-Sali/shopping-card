@@ -5,15 +5,21 @@ import { useTranslation } from "react-i18next";
 import langKey from "../../bootstrap/i18n/langKey";
 import { useShoppingCartContext } from "../../context/shopping-cart-context/shopping-cart-context";
 import AppNavbarLocalizationButton from "./localization-button/app-navbar-localization-button";
+import { LANGS } from "../../bootstrap/i18n/init-i18n";
 
 const AppNavbar = () => {
-  const { t } = useTranslation();
   const { cartQuantity, openCart } = useShoppingCartContext();
+  const { t, i18n } = useTranslation();
+  const isArabic = i18n.language === LANGS.AR;
 
   return (
-    <Navbar sticky="top" className="bg-white shadow-sm mb-3">
+    <Navbar
+      sticky="top"
+      className="bg-white shadow-sm mb-3"
+      dir={isArabic ? "rtl" : ""}
+    >
       <Container>
-        <Nav className="me-auto">
+        <Nav className={`${isArabic ? "ms-auto" : "me-auto"}`}>
           <Nav.Link as={NavLink} end to={routes.HOME}>
             {t(langKey.navbar.home)}
           </Nav.Link>

@@ -5,6 +5,7 @@ import { faShoppingBag } from "@fortawesome/free-solid-svg-icons/faShoppingBag";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { useTranslation } from "react-i18next";
 import langKey from "../../../bootstrap/i18n/langKey";
+import { LANGS } from "../../../bootstrap/i18n/init-i18n";
 
 export interface IDescriptionItemProps {
   icon: IconDefinition;
@@ -13,12 +14,14 @@ export interface IDescriptionItemProps {
 
 export const DescriptionItem = (props: IDescriptionItemProps) => {
   const { description, icon } = props;
+  const { i18n } = useTranslation();
+  const isArabic = i18n.language === LANGS.AR;
+
   return (
     <p className="d-flex align-items-center">
       <FontAwesomeIcon
         icon={icon}
-        style={{ fontSize: "23px", paddingRight: "10px" }}
-        className="text-danger"
+        className={`${isArabic ? "ps-2" : "pe-2"} text-danger fs-4 `}
       />
       {description}
     </p>
