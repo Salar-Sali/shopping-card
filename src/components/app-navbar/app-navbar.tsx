@@ -15,7 +15,7 @@ const AppNavbar = () => {
   return (
     <Navbar
       sticky="top"
-      className="bg-white shadow-sm mb-3"
+      className="bg-white shadow-sm mb-3 position-fixed w-100"
       dir={isArabic ? "rtl" : ""}
     >
       <Container>

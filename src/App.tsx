@@ -13,7 +13,7 @@ function App() {
         style={{ display: "flex", flexDirection: "column", height: "100vh" }}
       >
         <AppNavbar />
-        <Container className="mb-4" style={{ flex: 1 }}>
+        <Container className="mb-4" style={{ flex: 1, marginTop: "90px" }}>
           <Routes>
             <Route path="/shopping-card/" element={<HomePage />} />
             <Route path="/shopping-card/store" element={<StorePage />} />
