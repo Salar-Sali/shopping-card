@@ -3,6 +3,8 @@ import { faHome } from "@fortawesome/free-solid-svg-icons/faHome";
 import { faMobileAlt } from "@fortawesome/free-solid-svg-icons/faMobileAlt";
 import { faShoppingBag } from "@fortawesome/free-solid-svg-icons/faShoppingBag";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { useTranslation } from "react-i18next";
+import langKey from "../../../bootstrap/i18n/langKey";
 
 export interface IDescriptionItemProps {
   icon: IconDefinition;
@@ -24,18 +26,19 @@ export const DescriptionItem = (props: IDescriptionItemProps) => {
 };
 
 const HomePageDescription = () => {
+  const { t } = useTranslation();
   return (
     <div>
       <DescriptionItem
-        description="Affordable trends for a stylish look."
+        description={t(langKey.homePage.descriptionFirstItem)}
         icon={faShoppingBag}
       />
       <DescriptionItem
-        description="Innovative gadgets for a trendsetting lifestyle."
+        description={t(langKey.homePage.descriptionSecondItem)}
         icon={faMobileAlt}
       />
       <DescriptionItem
-        description="Quality, unique essentials to elevate daily life."
+        description={t(langKey.homePage.descriptionThirdItem)}
         icon={faHome}
       />
     </div>

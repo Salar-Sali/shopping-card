@@ -20,6 +20,10 @@ const ar: typeof langKey = {
     slogan: "أكتشف متعة التسوق الإلكتروني",
     with: "مع",
     shopNow: "تسوق الآن",
+    descriptionFirstItem: "تحديثات بأسعار معقولة لإطلالة أنيقة.",
+    descriptionSecondItem: "أجهزة مبتكرة لنمط حياة يحدث تغيراً.",
+    descriptionThirdItem:
+      "ضروريات عالية الجودة وفريدة لرفع مستوى الحياة اليومية.",
   },
   rightSidebar: {
     cart: "السلة",

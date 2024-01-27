@@ -28,6 +28,9 @@ const langKey = {
     slogan: "homePage.slogan",
     with: "homePage.with",
     shopNow: "homePage.shopNow",
+    descriptionFirstItem: "homePage.descriptionFirstItem",
+    descriptionSecondItem: "homePage.descriptionSecondItem",
+    descriptionThirdItem: "homePage.descriptionThirdItem",
   },
 };
 

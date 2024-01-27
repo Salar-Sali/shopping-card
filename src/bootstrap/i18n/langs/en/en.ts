@@ -25,6 +25,9 @@ const en: typeof langKey = {
     slogan: "Discover the Joy of Online Shopping",
     with: "with",
     shopNow: "SHOP NOW",
+    descriptionFirstItem: "Affordable trends for a stylish look.",
+    descriptionSecondItem: "Innovative gadgets for a trendsetting lifestyle.",
+    descriptionThirdItem: "Quality, unique essentials to elevate daily life.",
   },
 };
 
